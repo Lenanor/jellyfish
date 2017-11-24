@@ -1,0 +1,25 @@
+// background-image cover color
+$colorStart: (rgba(22,29,129,.3));
+$colorEnd: $colorStart;
+$colorStart2: (rgba(221,99,89,.3));
+$headings: 'Oswald', 'Impact', sans-serif;
+$text: 'Roboto', serif;
+$blue-purple: #161d81;
+$blue-purple-light: #999fef;
+$blue-purple-light2: #c3c6fb;
+$blue: #5883f1;
+$turquoise: #2196f3;
+$pinkish-light: #e1a08c;
+$pinkish-dark: #dd6359;
+$coral: #f7574a;
+$white-opacity: (rgba(255,255,255,.6));
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,900');
+
+// Mixin for break points
+@mixin break($minLength,$maxLength) {
+	@media (min-width: $minLength) and (max-width: $maxLength) {
+		@content;
+	}
+} 
+

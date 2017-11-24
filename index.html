@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+	<title> Maneternas vänner </title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://use.fontawesome.com/1f8d47782e.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- TOP OF PAGE (section 1) -->
+	<header>
+		<div class="start-wiew">
+
+			<div class="start-wiew-flex"> 
+
+				<div class="toggle">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#jump-one"> maneten </a></li>
+						<li><a href="#jump-two"> om oss </a></li>
+						<li><a href="#jump-three"> tävling </a></li>
+					</ul>
+				</nav>
+				<div class="pulse-container">
+					<h1 id="pulse1"> <span class="white-stripe"> maneternas</span></h1>
+					<h1 id="pulse2"> <span class="white-stripe"> vänner </span></h1>
+				</div>
+			</div>
+
+			<h2>Aktuellt: tagga din bästa manetbild - vinn dykresa! </h2>
+
+		</div>
+	</header>
+
+	<!-- TEXTS - ABOUT AND JELLYFISH (section 2) -->
+	<div class="text-wiew">
+		<article class="container-text-left">
+			<h2 id="jump-one"> Maneten </h2>
+			<p><span class="span-text">Maneter (Scyphozoa)</span> är en klass inom stammen <span class="span-text">nässeldjur</span>. Maneter lever i havet och har en livscykel som omfattar en växling mellan två olika utvecklingsstadium, ett fastsittande polypstadium och ett frisimmande <span class="span-text">medusastadium</span>. Den frisimmande medusan är klockformad eller skivformad och består till stor del av vatten. Det som ger maneten dess form, <span class="span-text">bhydrostatiskt skelett</span> kallat <span class="span-text">mesoglea</span> som innehåller vatten och kollagen. Munnen är placerad på undersidan och omgiven av ett antal <span class="span-text">munarmar</span> och längs kanten finns en krans av <span class="span-text">tentakler</span>. Maneten simmar medelst rytmiska sammandragningar av kroppshålan som pumpvis åstadkommer en <span class="span-text">jetstråle</span> som för den framåt. De följer ganska passivt havsströmmar.<br><br>I Sverige finns bara <span class="span-text">öronmaneten</span>, vars gift inte kan tränga igenom människohud, och <span class="span-text">röd- och blå brännmanet</span> vilkas brännskador också de är förhållandevis ofarliga. Utanför Australien guppar det till exempel omkring <span class="span-text">kubmaneter</span>. Dessa har dödat minst 5567 människor sen 1884.</p>
+			
+		</article>
+		<article class="container-text-right">
+			<h2 id="jump-two">Om oss</h2>
+			<p><span class="span-text">Manetens vänner</span> är en ideell förening startad 2017. Vi arbetar för att sprida kännedom om världens maneter och för att odla vårt gemensamma intresse. <br><br> Vi välkomnar nya medlemmar, skicka ett mail med dina uppgifter till <span class="span-text">manetens@vanner.se</span> så kontaktar vi dig.</p>
+			<div class="jellyfish-video">
+				<iframe src="https://www.youtube.com/embed/Cc8JT4A7Sp4" frameborder="0" allowfullscreen></iframe>
+				<p class="video-text"> Röd brännmanet (Cyanea capillata), är världens störst kända manet. </p>
+			</div>
+		</article>
+	</div>
+	
+	<!-- TEXT - ABOUT THE COMPETITION  (section 3) -->
+	<div class="background-img">
+		<div class="compete-text"> 
+			<h2  id="jump-three">Tävling</h2> 
+			<p> I sommar kan du vara med och tävla om en dykresa till manetrika vatten genom att tagga dina bästa manetbilder på Flickr med #maneter. Manetens Vänner utser vinnaren som koras den 30 augusti 2017.  </p>
+		</div>
+	</div>
+
+	<!-- PHOTOS - FROM FLICKR -->
+	<div class="photo-container">	
+    	<h2> Inkomna bidrag: </h2> 
+		<div id="photos"></div>
+	</div>
+
+	<!-- FOOTER -->
+    <footer class="footer"> 
+    	<div class="footer-text-container">
+			<p> Maneternas Vänner 2017</p>
+		</div>
+    </footer>
+	
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- CDN för GSAP (Green Sock Animation Platform) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<!-- JavaScript -->
+	<script  type="text/javascript" src="js/jellyfish.js"></script>
+
+</body>
+</html>

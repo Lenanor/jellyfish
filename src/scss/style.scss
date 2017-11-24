@@ -1,0 +1,329 @@
+@import "variables";
+
+* {
+	margin: 0;
+}
+
+
+// *************  TOP OF PAGE (section 1)  *************
+
+.start-wiew {
+	background-color: $blue-purple;
+	background-image: (linear-gradient(to top, $colorStart, $colorEnd), url('../img/jelly1.jpg'));
+	background-repeat: no-repeat;
+	background-size: 100%;
+	@include break(0,1000px) {
+		background-size: auto 100%;
+		background-position: center;	
+	} 
+	color: $blue-purple;
+	height: 100vh;
+
+	.start-wiew-flex {
+		display: flex;
+		justify-content: space-between;
+		@include break(0, 800px) {
+		   display: block;
+		} 
+
+		.toggle {
+			cursor: pointer;
+			margin: 0 10px;
+			padding: 15px 5px 0px 5px;
+			position: absolute;
+			z-index: 1;
+
+		
+		.fa-bars {
+				color: $pinkish-light;
+			}
+		.fa-times {
+				color: $blue-purple;
+			}
+			
+		}
+
+		nav {
+			margin: 10px;
+			width: 20%;
+			@include break(0, 530px) {
+				width: 40%;
+			}
+	
+			ul {
+				background-color: $pinkish-light;
+				height: auto;
+				list-style-type: none;
+				padding: 0;
+			
+				li {
+					padding: 10px;
+					text-align: center;
+					&:first-child {
+						padding-top: 50px; 
+					}
+					&:last-child {
+						padding-bottom: 40px; 
+					}
+					a {
+						color: $pinkish-dark;
+						text-decoration: none;
+						font-family: $text;
+						font-size: 20px;
+						&:hover{
+							border-bottom: 3px $coral  solid;
+					}
+
+					}
+				}
+			}
+		}
+		.pulse-container {
+			width: 80%;
+			padding-top: 170px;
+			padding-right: 20px;
+			@include break(0, 800px) {
+				width: 100%;
+				padding-top: 20px;
+			}
+			h1 {
+				font-family: $headings;
+				font-size: 13vw;
+				font-weight: 700;
+				line-height: 11vw;
+				padding-right: 25px;
+				text-align: right;
+				@include break(0, 800px) {
+					font-size: 17vw;
+					line-height: 18vw;
+					margin: 0 auto;
+					text-align: center;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+	h2 {
+		color: $coral;
+		font-family: $text;
+		font-size: 4vw;
+		margin-top: 8vh;
+		padding-top: 3vw;
+		text-align: center;
+		@include break(0, 680px) {
+			font-size: 6vw;
+			padding-top: 0;
+			width: 100%;
+		}
+	}   
+}
+
+// *************  TEXTS - ABOUT AND JELLYFISH (section 2)  **************
+
+.text-wiew {
+	display: flex;
+	width: auto;
+		@include break(0, 950px) {
+			display: block;	
+	}	
+}
+
+.container-text-left, 
+.container-text-right  {
+	background-color: $blue-purple;
+	color: $blue-purple-light;
+	font-family: $text;
+	padding: 70px 30px;
+	width: 50%;
+	@include break(0, 950px) {
+		width: auto;
+		height: auto;
+		padding: 50px 30px 70px 30px;	
+	}
+	
+	h2 {
+		border-bottom: 1px solid $blue-purple-light;
+		font-family: $headings;
+		font-size: 4vw;
+		padding: 30px 0;
+		width: 90%;
+		margin: 0 auto;
+		@include break(0, 830px) {
+			font-size: 7vw;
+			margin: 0 auto;
+		}
+	}
+
+	p {
+		font-size: 3vh;
+		padding: 30px 0 0 10px;
+		width: 90%;
+		margin: 0 auto;
+		@include break(0, 980px) {
+			margin: 0 auto;
+		}
+		.span-text {
+			color: $blue;
+		}
+
+	}
+}
+
+.container-text-right{
+
+	.jellyfish-video{
+		width: 100%;
+		margin: 0 auto;
+
+		.video-text{
+			font-size: 2.5vh;
+			font-weight: 700;
+			text-align: center;
+			width: 80%;
+			@include break(0, 950px) {
+				margin: 0 auto;
+				width: 70%;
+			}
+		}
+
+		iframe{
+			display: block;
+			height: 262px;
+			margin: 7% auto 0 auto;
+			width: 466px;
+			@include break(540px, 950px) { 
+  				max-width: 100vw;
+  				max-height: 56.25vw;
+  				margin: 15% auto 0 auto;
+  			}
+  			@include break(0, 540px) {
+  				 max-width: 80vw;
+  				max-height: 45vw;
+  				margin: 20% auto 0 auto;
+			}
+			
+		} 
+	}
+}
+
+// *************** FLIKR area (section 3) **************
+
+.background-img {
+	background-image: (linear-gradient(to top, $colorStart2, $colorStart2), url('../img/jelly2.jpg'));
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	
+
+	.compete-text {
+		background-color: $white-opacity ;
+		color: $coral;
+		font-family: $text;
+		height: 100%;
+		margin: 0 auto;
+		padding: 150px 30px;
+		width: 100%;
+		
+		h2 {
+			border-bottom: 1px solid #dc400f;
+			font-family: $headings;
+			font-size: 4vw;
+			// letter-spacing: 3px;
+			margin: 0 auto;
+			padding: 30px 0;
+			width: 70%;
+			
+			@include break(0, 830px) {
+				font-size: 7vw;
+				margin: 0 auto;
+			}
+		}
+
+		p {
+			font-size: 3vh;
+			margin: 0 auto;
+			padding: 30px 0 0 10px;
+			width: 70%;
+			@include break(0, 830px) {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+#photos {
+	background-color: black;
+	padding: 50px;
+	
+	.fli {	
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		justify-content: space-around; 
+ 		list-style-type: none;
+ 		padding: 0;
+		li{
+			margin: 30px 0 0;
+  			text-align: center;
+  			vertical-align: middle;
+  			img{
+  				padding-top: 10px;
+  				height: 200px;
+  				width: 280px;
+  			}
+		}	
+	}
+}
+
+.photo-container{
+	h2{
+		background: black;
+		color: $pinkish-light;
+		font-family: $headings;
+		font-size: 3vw;
+    	padding: 10% 50px 0 50px;
+	}
+}
+
+
+
+// ******************** FOOTER **********************
+
+footer {
+	background-color: black;
+	height: 12vh;
+	.footer-text-container {
+		color: $blue-purple-light;
+		font-family: $headings;
+		p {
+			text-align: center;
+			padding-top: 5vh;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
